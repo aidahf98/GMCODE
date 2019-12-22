@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     
@@ -21,38 +22,43 @@
    <div class="cover">
        <h1 class="heading">COURSES</h1>
    </div>
-   <div class="feedback" align="center">
+   <div align="center">
+       
 <label><h2>Feedback</h2></label><br>
-<button> B </button>
-<button> I </button>
-<button> Underline </button>
-<select  id="">
+
+<button onclick="makeBold()"> B </button>
+<button onclick="makeItalic()"> I </button>
+<button onclick="makeUnderline()"> Underline </button>
+
+<select  id="Size" onchange="changeSize()">
+
     <option value="20">
-        20 px
+        20px
     </option>
     <option value="30">
         30px
     </option>
     <option value="40">
-        40 px
+        40px
     </option>
 </select>
-<select id="">
-<option value="arial">
-    arial
+<select id="Police" onchange="changePolice()">
+<option value="Arial, Helvetica, sans-serif">
+    Arial
 </option>
-<option value="new times">
-    new times
+<option value="'Times New Roman', Times, serif">
+    Times New Roman
 </option>
 </select>
 </body>
 <body>
 <form>
     <br>
-    <textarea name="" id="" cols="50" rows="5"></textarea>
+    <textarea name="" id="MyText" cols="40" rows="5"></textarea>
     <br>
 </form>
 </div>
 
 </body>
+
 </html>
