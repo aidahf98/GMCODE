@@ -35,6 +35,7 @@ function changePolice(){
 $(document).ready(()=>{
 
     $("button").css({"opacity":"0"});
+    $(".button_form button").css({"opacity":"1"});
 
     $(".courses div").mouseenter(function(){
         $(this).css({"opacity":"0.5"});
