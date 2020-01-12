@@ -1,6 +1,7 @@
 // var getid=document.getElementById(StyleText);
 // var selectSize=document.getElementById(Size);
 // var selectPolice=document.getElementById(Police);
+// var document.getElementByClass(Courses);
 
 function makeBold(){
     if(document.getElementById("MyText").style.fontWeight == "")
@@ -31,10 +32,21 @@ function changePolice(){
     
 }
 
+$(document).ready(()=>{
 
+    $("button").css({"opacity":"0"});
 
+    $(".courses div").mouseenter(function(){
+        $(this).css({"opacity":"0.5"});
+        str = "."+this.className+" button";
+        $(str).css({"opacity":"1"});
+        console.log(str)
+    })
 
+    $(".courses div").mouseleave(function(){
+        $(this).css({"opacity":"1"});
+        str = "."+this.className+" button";
+        $(str).css({"opacity":"0"});
+    })
 
-
-
-
+});
