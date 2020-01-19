@@ -34,19 +34,21 @@ function changePolice(){
 
 $(document).ready(()=>{
 
-    $("button").css({"opacity":"0"});
+    $(".courses button").css({"opacity":"0"});
     $(".button_form button").css({"opacity":"1"});
-
+    $(".button_form1 button").css({"opacity":"1"});
+    $("#navbutton").css({"opacity":"1"});
+    
     $(".courses div").mouseenter(function(){
         $(this).css({"opacity":"0.5"});
-        str = "."+this.className+" button";
+        str = "#"+this.id+" button";
         $(str).css({"opacity":"1"});
         console.log(str)
     })
 
     $(".courses div").mouseleave(function(){
         $(this).css({"opacity":"1"});
-        str = "."+this.className+" button";
+        str = "#"+this.id+" button";
         $(str).css({"opacity":"0"});
     })
 

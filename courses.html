@@ -2,46 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>GMD-Courses</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
     
-    <nav class="navbar" >
-             
-        <a><img src="res/section2GMCLogo.png" width="50px"height="50px"></a>
-       <ul id="ul">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="courses.html">Courses</a></li>
-         <li><a href="contact.html">Contact</a></li>
-       </ul>
-   </nav> 
-   <center>
+    <nav class=" navbar navbar-expand-lg nav nav-fill justify-content-center">
+        <button class="navbar-toggler" id="navbutton" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img src="res/section2GMCLogo.png" class="d-inline-block align-top"  alt="" height="40px" width="40px"></a>
+        <a class="nav-link active nav-item" href="index.html">Home</a>
+        <a class="nav-link nav-item" href="courses.html">Courses</a>
+        <a class="nav-link nav-item" href="contact.html">Contact</a>
+        </div>
+      </nav>
    <div class="cover">
        <h1 class="heading">COURSES</h1>
    </div>
    <br>
+ 
    <div class="courses">
-       <div class="course1"><a href="#course1M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course2"><a href="#course2M" rel="modal:open"><button type="button">View more</button></a ></div>
-       <div class="course3"><a href="#course3M" rel="modal:open"><button type="button">View more</button></a ></div>
-       <div class="course4"><a href="#course4M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course5"><a href="#course5M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course6"><a href="#course6M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course7"><a href="#course7M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course8"><a href="#course8M" rel="modal:open"><button type="button">View more</button></a></div>
-       <div class="course9"><a href="#course9M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course1" class="course1 col-12 col-md-3"><a href="#course1M" rel="modal:open"><button type="button">View more</button></a></div id="course">
+       <div id="course2" class="course2 col-12 col-md-3"><a href="#course2M" rel="modal:open"><button type="button">View more</button></a ></div>
+       <div id="course3" class="course3 col-12 col-md-3"><a href="#course3M" rel="modal:open"><button type="button">View more</button></a ></div>
+       <div id="course4" class="course4 col-12 col-md-3"><a href="#course4M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course5" class="course5 col-12 col-md-3"><a href="#course5M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course6" class="course6 col-12 col-md-3"><a href="#course6M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course7" class="course7 col-12 col-md-3"><a href="#course7M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course8" class="course8 col-12 col-md-3"><a href="#course8M" rel="modal:open"><button type="button">View more</button></a></div>
+       <div id="course9" class="course9 col-12 col-md-3"><a href="#course9M" rel="modal:open"><button type="button">View more</button></a></div>
    </div>
+   <div class="feedback">
   
-       
 <label><h2>Feedback</h2></label><br>
+
 <div class="button_form">
     <button onclick="makeBold()"> B </button>
     <button onclick="makeItalic()"> I </button>
@@ -72,15 +74,15 @@
 <body>
 <form>
     <br>
-    <textarea name="" id="MyText" cols="40" rows="5"></textarea>
+    <textarea name="" id="MyText" cols="43" rows="5"></textarea>
     <br>
 </form>
 </div>
-</center>
+
 <div id="course1M" class="modal">
   <p>“Talk is cheap. Show me the code.”</p>
 </div>
-<div id="courseM" class="modal">
+<div id="course2M" class="modal">
     <p>“Programs must be written for people to read, and only incidentally for machines to execute.”</p>
 </div>
 <div id="course3M" class="modal">
@@ -101,16 +103,24 @@
 <div id="course8M" class="modal">
     <p>"Testing leads to failure, and failure leads to understanding."</p>
 </div>
-<div id="course9M" class="modal">
-    <p>“The most damaging phrase in the language is.. it's always been done this way”</p>
-</div>
 
 
+ 
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-
-
+<!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+

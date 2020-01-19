@@ -1,27 +1,21 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
 *{
     margin: 0px;
     padding: 0px;
 }
-#ul{
-    margin-left: 25%;
+.d-block{
+    height: 35rem;
 }
-
-#ul>li{
-    margin-left: 110px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-    display: inline;
+.nav-link{
     
-}
-#ul>li>a{
-    text-decoration: none;
-    text-shadow: 2px 2px rgb(40, 0, 0);
-    color:white;
+    text-shadow: 1px 1px black;
+    color:whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#ul>li>a:hover {
+.nav-link:hover {
+    text-shadow: black;
     color:red ;
     text-decoration: underline;
 }
@@ -29,11 +23,6 @@ body{
     background-image:linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, black, black 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-}
-.navbar{
-    background-color: transparent;
-    border-color: transparent;
-    
 }
 .cover {
     width: 100%;
@@ -54,13 +43,14 @@ body{
     color: whitesmoke;
     position: relative;
     top: 50%;
+    display: inherit;
    
     text-shadow: 5px 2px rgb(40, 0, 0);
 }
 .heading {
     font-size: 4em;
     font-family: 'Bree Serif', serif;
-    margin: 30px 20px 40px 50px;
+    margin-left: 35%;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
@@ -69,26 +59,33 @@ label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 15px;
+    margin-left: 5%;
 }
-h1{
+h2{
     color: cornsilk;
+}
+.contact{
+    margin-left: 40%;
 }
 
 
 #contactform>div{
-    width: 250px;
+    width: 150px;
 }
 #contactform>div>input{
-    width: 250px;
+    width: 220px;
     height: 30px;
 }
 #contactform>div>select{
-   width: 250px;
+   width: 220px;
    height: 30px;
 }
 #contactform>div>label{
-    width: 250px;
+    width: 220px;
 
+}
+.button_form1{
+    margin-left:10% ;
 }
 .courses{
     display: flex;
@@ -149,14 +146,20 @@ h1{
     background-image: url("../res/image1.png");
 }
 
+
 .button_form{
     display: inline;
+
 }
+.feedback{
+    margin-left: 40%;
+}
+    /* cette classe est à ajouter lorsque que vous utilisez une version de Bootstap supérieure ou égale à la 3.1.0 */
+    .nav-collapse.collapse.in {
+        display: block!important;
+        }
+        .collapsing {
+        overflow: hidden!important;
+        }
 
-
-
-
-
-       
-
-
+    
